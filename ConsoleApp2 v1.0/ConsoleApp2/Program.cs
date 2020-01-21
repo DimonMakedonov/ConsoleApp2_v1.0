@@ -14,6 +14,7 @@ namespace ConsoleApp2
             Load load = new Load(); //Создание объектов классов загрузки, сохранение и конференции
             Save save = new Save(); //
             Сonf conf = new Сonf(); //
+            string file = "";
             string a;
             int n = 0;
             conf.confreadinfo(); //Метод ввода данных о конференции
@@ -32,18 +33,20 @@ namespace ConsoleApp2
             a = Console.ReadLine();
             if (a == "д")
             {
-                System.IO.File.Create("File.txt").Close(); //Создание файла
+                Console.Write("Введите имя файла");
+                file = Console.ReadLine();
+                System.IO.File.Create(file).Close(); //Создание файла
                 for (int i = 0; i < n; i++)
-                    save.savetofile(scince[i], conf, n);   //Метод сохоанения данных в файл
+                    save.savetofile(scince[i], conf, n, file);   //Метод сохоанения данных в файл
                 Console.WriteLine("Сохранено");
             }
-            if (System.IO.File.Exists("File.txt")) //Проверка существует ли файл
+            if (System.IO.File.Exists(file)) //Проверка существует ли файл
             {
                 Console.Write("Загрузить данные из файла? (д/н) ");
                 a = Console.ReadLine();
                 if (a == "д")
                 {
-                    StreamReader sr = new StreamReader("File.txt"); //Считывание количества учёных в файле
+                    StreamReader sr = new StreamReader(file); //Считывание количества учёных в файле
                     n = int.Parse(sr.ReadLine());                   //
                     sr.Close();                                     //
                     scince = new Scince[n];                         //Создание нового массива учёных

@@ -6,38 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    class Save
+    class SaveScince
     {
-        private int fs = 0;
-        public Save() { } //Констурктор класса Save
-        public void savetofile(Scince scince, Сonf conf, int n, string file)
+        public void ss() { }
+        public void savescince(Scince scince, string file)
         {
-            SaveConf sc = new SaveConf();
-            SaveScince ss = new SaveScince();
-            if (fs == 0)
-            {
-                fs = 1;
-                System.IO.File.WriteAllText(file, "");
-                System.IO.File.AppendAllText(file, n.ToString());
-                System.IO.File.AppendAllText(file, "\n");
-            }
-            sc.saveconf(conf, file);
-            ss.savescince(scince, file);
-            /*System.IO.File.AppendAllText(file, "\n");
-            System.IO.File.AppendAllText(file, conf.getnameconf());
-            System.IO.File.AppendAllText(file, "\n");
-            System.IO.File.AppendAllText(file, conf.getplaceconf());
-            System.IO.File.AppendAllText(file, "\n");
-            System.IO.File.AppendAllText(file, conf.getd().ToString());
-            System.IO.File.AppendAllText(file, "\n");
-            System.IO.File.AppendAllText(file, conf.getmon().ToString());
-            System.IO.File.AppendAllText(file, "\n");
-            System.IO.File.AppendAllText(file, conf.gety().ToString());
-            System.IO.File.AppendAllText(file, "\n");
-            System.IO.File.AppendAllText(file, conf.geth().ToString());
-            System.IO.File.AppendAllText(file, "\n");
-            System.IO.File.AppendAllText(file, conf.getm().ToString());
-            System.IO.File.AppendAllText(file, "\n");
             System.IO.File.AppendAllText(file, scince.getfam());
             System.IO.File.AppendAllText(file, "\n");
             System.IO.File.AppendAllText(file, scince.getname());
@@ -62,7 +35,7 @@ namespace ConsoleApp2
             System.IO.File.AppendAllText(file, "\n");
             System.IO.File.AppendAllText(file, scince.gethour().ToString());
             System.IO.File.AppendAllText(file, "\n");
-            System.IO.File.AppendAllText(file, scince.getmin().ToString());*/
+            System.IO.File.AppendAllText(file, scince.getmin().ToString());
         }
     }
 }

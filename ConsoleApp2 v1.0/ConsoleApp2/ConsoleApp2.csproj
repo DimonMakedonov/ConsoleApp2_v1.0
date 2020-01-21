@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Load.cs" />
     <Compile Include="Save.cs" />
+    <Compile Include="SaveConf.cs" />
+    <Compile Include="SaveScince.cs" />
     <Compile Include="Сonf.cs" />
     <Compile Include="Scince.cs" />
     <Compile Include="Org.cs" />
