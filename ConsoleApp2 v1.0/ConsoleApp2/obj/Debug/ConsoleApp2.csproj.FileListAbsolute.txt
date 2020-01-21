@@ -25,3 +25,9 @@ C:\Users\Dima\Desktop\Курсовая\ConsoleApp2 v1.0\ConsoleApp2\obj\Debug\Co
 C:\Users\Dima\Desktop\Курсовая\ConsoleApp2 v1.0\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
 C:\Users\Dima\Desktop\Курсовая\ConsoleApp2 v1.0\ConsoleApp2\obj\Debug\ConsoleApp2.exe
 C:\Users\Dima\Desktop\Курсовая\ConsoleApp2 v1.0\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+C:\Users\Student\Documents\GitHub\ConsoleApp2_v1.0\ConsoleApp2 v1.0\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\Student\Documents\GitHub\ConsoleApp2_v1.0\ConsoleApp2 v1.0\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\Student\Documents\GitHub\ConsoleApp2_v1.0\ConsoleApp2 v1.0\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\Student\Documents\GitHub\ConsoleApp2_v1.0\ConsoleApp2 v1.0\ConsoleApp2\obj\Debug\ConsoleApp2.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\GitHub\ConsoleApp2_v1.0\ConsoleApp2 v1.0\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\Student\Documents\GitHub\ConsoleApp2_v1.0\ConsoleApp2 v1.0\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
