@@ -16,6 +16,46 @@ namespace ConsoleApp2
             org = new Org();
             part = new Part();
         }
+
+        public void Write(Save sm)
+        {
+            sm.WriteLine(this.getfam());
+            sm.WriteLine(this.getotch());
+            sm.WriteLine(this.getuchstep());
+            sm.WriteLine(this.getid().ToString());
+            sm.WriteLine(this.getnameorg());
+            sm.WriteLine(this.getcountryorg());
+            sm.WriteLine(this.getcityorg());
+            sm.WriteLine(this.gettheme());
+            sm.WriteLine(this.gettypeofpart());
+            sm.WriteLine(this.getpubl().ToString());
+            sm.WriteLine(this.gethour().ToString());
+            sm.WriteLine(this.getmin().ToString());
+
+            /*System.IO.File.AppendAllText(file, scince.getname());
+            System.IO.File.AppendAllText(file, "\n");
+            System.IO.File.AppendAllText(file, scince.getotch());
+            System.IO.File.AppendAllText(file, "\n");
+            System.IO.File.AppendAllText(file, scince.getuchstep());
+            System.IO.File.AppendAllText(file, "\n");
+            System.IO.File.AppendAllText(file, scince.getid().ToString());
+            System.IO.File.AppendAllText(file, "\n");
+            System.IO.File.AppendAllText(file, scince.getnameorg());
+            System.IO.File.AppendAllText(file, "\n");
+            System.IO.File.AppendAllText(file, scince.getcountryorg());
+            System.IO.File.AppendAllText(file, "\n");
+            System.IO.File.AppendAllText(file, scince.getcityorg());
+            System.IO.File.AppendAllText(file, "\n");
+            System.IO.File.AppendAllText(file, scince.gettheme());
+            System.IO.File.AppendAllText(file, "\n");
+            System.IO.File.AppendAllText(file, scince.gettypeofpart());
+            System.IO.File.AppendAllText(file, "\n");
+            System.IO.File.AppendAllText(file, scince.getpubl().ToString());
+            System.IO.File.AppendAllText(file, "\n");
+            System.IO.File.AppendAllText(file, scince.gethour().ToString());
+            System.IO.File.AppendAllText(file, "\n");
+            System.IO.File.AppendAllText(file, scince.getmin().ToString());*/
+        }
         public void info()
         {
             Console.Write("Фамилия: ");

@@ -11,9 +11,7 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            Load load = new Load(); //Создание объектов классов загрузки, сохранение и конференции
-            Save save = new Save(); //
-            Сonf conf = new Сonf(); //
+                Сonf conf = new Сonf(); //Создание объекта класса Conf
             string file = "";
             string a;
             int n = 0;
@@ -35,9 +33,10 @@ namespace ConsoleApp2
             {
                 Console.Write("Введите имя файла");
                 file = Console.ReadLine();
+                Save save = new Save(file, n); //Создание объектов класса сохранения
                 System.IO.File.Create(file).Close(); //Создание файла
                 for (int i = 0; i < n; i++)
-                    save.savetofile(scince[i], conf, n, file);   //Метод сохоанения данных в файл
+                    scince[i].Write(save);   //Метод сохоанения данных в файл
                 Console.WriteLine("Сохранено");
             }
             if (System.IO.File.Exists(file)) //Проверка существует ли файл
@@ -46,6 +45,7 @@ namespace ConsoleApp2
                 a = Console.ReadLine();
                 if (a == "д")
                 {
+                    Load load = new Load(file); //Создание объектов класса загрузки
                     StreamReader sr = new StreamReader(file); //Считывание количества учёных в файле
                     n = int.Parse(sr.ReadLine());                   //
                     sr.Close();                                     //

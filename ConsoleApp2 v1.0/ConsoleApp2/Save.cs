@@ -9,8 +9,22 @@ namespace ConsoleApp2
     class Save
     {
         private int fs = 0;
-        public Save() { } //Констурктор класса Save
-        public void savetofile(Scince scince, Сonf conf, int n, string file)
+        public string file;
+        public Save(string filee, int n)//Констурктор класса Save
+        {
+            file = filee;
+            System.IO.File.AppendAllText(file, n.ToString() + "\n");
+        } 
+
+        public void savetofile(Scince scince)
+        {
+            scince.Write(this);
+        }
+        public void WriteLine(string s)
+        {
+            System.IO.File.AppendAllText(file, s+"\n");
+        }
+        /*public void savetofile(Scince scince, Сonf conf, int n, string file)
         {
             SaveConf sc = new SaveConf();
             SaveScince ss = new SaveScince();
@@ -21,8 +35,8 @@ namespace ConsoleApp2
                 System.IO.File.AppendAllText(file, n.ToString());
                 System.IO.File.AppendAllText(file, "\n");
             }
-            sc.saveconf(conf, file);
-            ss.savescince(scince, file);
+            //sc.saveconf(conf, file);
+            //ss.savescince(scince, file);
             /*System.IO.File.AppendAllText(file, "\n");
             System.IO.File.AppendAllText(file, conf.getnameconf());
             System.IO.File.AppendAllText(file, "\n");
@@ -62,7 +76,7 @@ namespace ConsoleApp2
             System.IO.File.AppendAllText(file, "\n");
             System.IO.File.AppendAllText(file, scince.gethour().ToString());
             System.IO.File.AppendAllText(file, "\n");
-            System.IO.File.AppendAllText(file, scince.getmin().ToString());*/
-        }
+            System.IO.File.AppendAllText(file, scince.getmin().ToString());
+        }*/
     }
 }

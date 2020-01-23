@@ -9,12 +9,13 @@ namespace ConsoleApp2
 {
     class Load
     {
+        public string file;
         private int fl = 0;
-        public Load() { } //Констурктор класса Load
+        public Load(string filee) { file = filee; } //Констурктор класса Load
         public void loadfile(int n, Scince[] scince, Сonf conf)
         {
             
-            StreamReader sr = new StreamReader("File.txt");
+            StreamReader sr = new StreamReader(file);
             if (fl == 0)
             {
                 fl = 1;
